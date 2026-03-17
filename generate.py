@@ -61,7 +61,10 @@ def get_completion(prompt, model="gpt-5.4"):
     return response.choices[0].message["content"]
 
 prompt = f"""
-Generate a CMake based C++ "{appname}" multiplatform application. It is a classic "Hello World" application. \
+Generate a CMake based C++ "{appname}" flkt based multiplatform application. \
+The flkt package should be fetched with tag release-1.3.9. \
+Include fltk_BINARY_DIR and fltk_SOURCE_DIR as a target include directories in the CMakeLists.txt \
+It is a classic "Hello World" application. \
 The application can be inatalled in install root directory, not 'bin'. \
 Use C++ 20.
 """
