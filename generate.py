@@ -64,7 +64,7 @@ prompt = f"""
 Generate a CMake based C++ "{appname}" flkt based multiplatform application. \
 The flkt package should be fetched with tag release-1.3.9. \
 Include fltk_BINARY_DIR and fltk_SOURCE_DIR as a target include directories in the CMakeLists.txt \
-It is a classic "Hello World" application. \
+The main function contains only one window "cgai - Hello World" with one text box "Hello, World!".\
 The application can be inatalled in install root directory, not 'bin'. \
 Use C++ 20.
 """
